@@ -1,0 +1,106 @@
+:root{
+  --bg:#0e0f13;
+  --card:#141621;
+  --text:#e9edf3;
+  --brand:#f973a1;
+  --accent:#7cd2ff;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Poppins", sans-serif;
+}
+
+.wrapper{
+  width:min(1000px,90%);
+  margin:40px auto;
+  display:grid;
+  gap:20px;
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:16px;
+}
+
+.site-header, .site-footer{
+  background:rgba(255,255,255,.05);
+  padding:12px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{color:var(--brand)}
+
+.nav a{
+  margin-left:10px;
+  text-decoration:none;
+  color:var(--text);
+  padding:6px 10px;
+  border-radius:12px;
+}
+.nav a.active{background:rgba(255,255,255,.1)}
+
+.btn{
+  background:var(--accent);
+  color:#000;
+  padding:10px 14px;
+  border-radius:12px;
+  font-weight:600;
+  display:inline-block;
+}
+
+.profile-card{
+  display:flex;
+  gap:24px;
+  flex-wrap:wrap;
+}
+
+.avatar{
+  width:150px; height:150px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+td,th{
+  border:1px solid rgba(255, 162, 162, 0.15);
+  padding:8px;
+}
+
+.skills-table .stars{
+  font-family:"Segoe UI Symbol";
+}
+
+.contact-form{
+  display:grid;
+  gap:12px;
+}
+input,select,textarea{
+  width:100%;
+  background:#0f1220;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:10px;
+  padding:10px;
+  color:var(--text);
+}
+
+.fansite-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.idol-placeholder{
+  width:200px;height:200px;
+  display:flex;align-items:center;justify-content:center;
+  border:2px dashed rgba(255,255,255,.3);
+  border-radius:12px;
+}
